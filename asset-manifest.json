@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/v2ex-daily-hot-topic-web/static/css/main.537ce7bf.chunk.css",
+    "main.css": "/v2ex-daily-hot-topic-web/static/css/main.6d7d3c43.chunk.css",
     "main.js": "/v2ex-daily-hot-topic-web/static/js/main.a2135a04.chunk.js",
     "main.js.map": "/v2ex-daily-hot-topic-web/static/js/main.a2135a04.chunk.js.map",
     "runtime-main.js": "/v2ex-daily-hot-topic-web/static/js/runtime-main.37b86224.js",
@@ -8,13 +8,13 @@
     "static/js/2.cc12d952.chunk.js": "/v2ex-daily-hot-topic-web/static/js/2.cc12d952.chunk.js",
     "static/js/2.cc12d952.chunk.js.map": "/v2ex-daily-hot-topic-web/static/js/2.cc12d952.chunk.js.map",
     "index.html": "/v2ex-daily-hot-topic-web/index.html",
-    "static/css/main.537ce7bf.chunk.css.map": "/v2ex-daily-hot-topic-web/static/css/main.537ce7bf.chunk.css.map",
+    "static/css/main.6d7d3c43.chunk.css.map": "/v2ex-daily-hot-topic-web/static/css/main.6d7d3c43.chunk.css.map",
     "static/js/2.cc12d952.chunk.js.LICENSE.txt": "/v2ex-daily-hot-topic-web/static/js/2.cc12d952.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.37b86224.js",
     "static/js/2.cc12d952.chunk.js",
-    "static/css/main.537ce7bf.chunk.css",
+    "static/css/main.6d7d3c43.chunk.css",
     "static/js/main.a2135a04.chunk.js"
   ]
 }
