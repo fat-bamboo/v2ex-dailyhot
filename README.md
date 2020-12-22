@@ -1,3 +1,3 @@
 # V2EX hot topics website
 
-[click here to see more](http://todo)
+[link](https://realleonardo.github.io/v2ex-daily-hot-topic-web/)
