@@ -5,28 +5,45 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .topics-container > .date-text {
   font-size: 22px;
+  margin-bottom: 10px;
 }
 
 .topics-container > .topic-container {
   width: 100%;
   height: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
-.topic-container a {
-  text-decoration: none;
+.topic-container * {
   color: black;
   margin: 5px 0;
+  font-size: 16px;
+  line-height: 24px;
 }
 
-.topic-container a:hover {
+.topic-container > .index-text {
+  color: gray;
+  display: block;
+  width: 22px;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.topic-container > .link-text {
+  margin-left: 5px;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.topic-container > .link-text:hover {
   text-decoration: underline;
 }

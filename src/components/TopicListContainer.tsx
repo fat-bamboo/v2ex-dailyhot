@@ -12,22 +12,23 @@ export default class TopicListContainer extends React.Component {
 
   constructor(props: Props) {
     super(props);
+
     this.props = props;
   }
 
   public render() {
-    const dateString: string = this.props.date;
-    const topics: Topic[] = this.props.topics;
+    const { date: dateStr, topics } = this.props;
 
     return (
       <div className="topics-container">
-        <p className="date-text">{dateString}</p>
+        <p className="date-text">{dateStr}</p>
         {topics.length === 0 ? (
           <p className="null-text">空空如也</p>
         ) : (
-          topics.map((t) => (
+          topics.map((t, idx) => (
             <div className="topic-container" key={t.id}>
-              <a className="" href={t.url}>
+              <span className="index-text">{idx + 1}.</span>
+              <a className="link-text" href={t.url}>
                 {t.title}
               </a>
             </div>

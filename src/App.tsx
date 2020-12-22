@@ -1,22 +1,24 @@
 import React from "react";
 import "./css/app.css";
-import { Topic } from "./types";
-import * as utils from "./utils";
 import TopicListContainer from "./components/TopicListContainer";
+import * as utils from "./utils";
+import { Topic } from "./types";
 import {
   RAW_JSON_BASE_URL,
   SCRIPT_BEGIN_TIMESTAMP,
   DAY_MILLISECONDS_COUNT,
 } from "./consts";
 
+type State = {
+  isFetching: boolean;
+  dailyTopics: {
+    date: string;
+    topics: Topic[];
+  }[];
+};
+
 class App extends React.Component {
-  public state: {
-    isFetching: boolean;
-    dailyTopics: {
-      date: string;
-      topics: Topic[];
-    }[];
-  };
+  public state: State;
 
   constructor(props: any) {
     super(props);
@@ -28,9 +30,10 @@ class App extends React.Component {
   }
 
   async componentDidMount() {
+    const beginingTimestamp = new Date(SCRIPT_BEGIN_TIMESTAMP).getTime();
     let currentTimestamp = utils.getCurrentTimeStamp();
 
-    while (currentTimestamp > new Date(SCRIPT_BEGIN_TIMESTAMP).getTime()) {
+    while (currentTimestamp > beginingTimestamp) {
       const formatDateString = utils.formatDate(currentTimestamp);
       const rawDataFilePath = RAW_JSON_BASE_URL + formatDateString + ".json";
 
@@ -59,7 +62,7 @@ class App extends React.Component {
   public render() {
     return (
       <div className="page-container">
-        <header className="header-text">V2EX 热点主题</header>
+        <header className="header-text">V2EX 每日热门主题</header>
         {this.state.dailyTopics.map((d) => (
           <TopicListContainer
             key={d.date}
