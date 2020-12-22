@@ -26,6 +26,7 @@ export default class TopicListContainer extends React.Component {
           <p className="null-text">空空如也</p>
         ) : (
           topics.map((t, idx) => (
+            // NOTE: define topic item element
             <div className="topic-container" key={t.id}>
               <span className="index-text">{idx + 1}.</span>
               <a className="link-text" href={t.url}>

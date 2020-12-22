@@ -30,7 +30,7 @@ class App extends React.Component {
   }
 
   async componentDidMount() {
-    const beginingTimestamp = new Date(SCRIPT_BEGIN_TIMESTAMP).getTime();
+    const beginingTimestamp = SCRIPT_BEGIN_TIMESTAMP;
     let currentTimestamp = utils.getCurrentTimeStamp();
 
     while (currentTimestamp > beginingTimestamp) {
@@ -48,7 +48,9 @@ class App extends React.Component {
           dailyTopics: this.state.dailyTopics.concat(dailyTopics),
         });
       } catch (error) {
+        // TODO: handle fetch error
         console.error(error);
+        break;
       }
 
       currentTimestamp -= DAY_MILLISECONDS_COUNT;
