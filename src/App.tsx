@@ -62,7 +62,7 @@ class App extends React.Component {
   public render() {
     return (
       <div className="page-container">
-        <header className="header-text">V2EX 每日热门主题</header>
+        <header className="header-text">V2EX 每日热门话题</header>
         {this.state.dailyTopics.map((d) => (
           <TopicListContainer
             key={d.date}
