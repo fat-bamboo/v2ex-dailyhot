@@ -18,3 +18,10 @@
   margin-bottom: 15px;
   border-bottom: 1px solid lightgray;
 }
+
+.page-container .error-text {
+  border: 1px solid gray;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+}

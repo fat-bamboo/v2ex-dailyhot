@@ -15,6 +15,7 @@ type State = {
     date: string;
     topics: Topic[];
   }[];
+  failedFetching: boolean;
 };
 
 class App extends React.Component {
@@ -26,6 +27,7 @@ class App extends React.Component {
     this.state = {
       isFetching: true,
       dailyTopics: [],
+      failedFetching: false,
     };
   }
 
@@ -48,7 +50,9 @@ class App extends React.Component {
           dailyTopics: this.state.dailyTopics.concat(dailyTopics),
         });
       } catch (error) {
-        // TODO: handle fetch error
+        this.setState({
+          failedFetching: true,
+        });
         console.error(error);
         break;
       }
@@ -65,6 +69,7 @@ class App extends React.Component {
     return (
       <div className="page-container">
         <header className="header-text">V2EX 每日热门话题</header>
+        {/* 每日话题列表 */}
         {this.state.dailyTopics.map((d) => (
           <TopicListContainer
             key={d.date}
@@ -72,9 +77,28 @@ class App extends React.Component {
             date={d.date}
           ></TopicListContainer>
         ))}
+        {/* fetching status text */}
         {this.state.isFetching && <p>获取数据中...</p>}
+        {/* fetch failed result text */}
+        {this.state.failedFetching && (
+          <p>
+            获取数据失败，
+            <span className="error-text" onClick={this.refreshPage.bind(this)}>
+              刷新一下吧
+            </span>
+          </p>
+        )}
       </div>
     );
+  }
+
+  private refreshPage() {
+    this.setState({
+      isFetching: true,
+      dailyTopics: [],
+      failedFetching: false,
+    });
+    this.componentDidMount();
   }
 }
 
