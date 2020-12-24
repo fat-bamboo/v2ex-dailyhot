@@ -47,6 +47,5 @@
 }
 
 .topic-container > .link-text:hover {
-  font-weight: bold;
-  text-decoration-color: gray;
+  text-decoration-color: black;
 }
