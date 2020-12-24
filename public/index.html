@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="icon"
-      href="https://avatars1.githubusercontent.com/u/24653555?s=64"
+      href="%PUBLIC_URL%/favicon.ico"
       sizes="64x64"
       type="image/*"
     />
@@ -30,4 +30,13 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
+
+  <script>
+    // Register service worker to control making site work offline
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("%PUBLIC_URL%/sw.js").then(function () {
+        console.log("Service Worker Registered");
+      });
+    }
+  </script>
 </html>
