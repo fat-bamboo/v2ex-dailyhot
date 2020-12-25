@@ -8,10 +8,9 @@
   "theme_color": "white",
   "icons": [
     {
-      "src": "/v2ex-daily-hot-topic-web//icon.jpg",
-      "type": "image/jpg",
-      "sizes": "256x256",
-      "purpose": "any maskable"
+      "src": "/v2ex-daily-hot-topic-web/icon.jpg",
+      "type": "image/jpge",
+      "sizes": "256x256"
     }
   ]
 }
