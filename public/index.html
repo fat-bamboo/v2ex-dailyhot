@@ -10,6 +10,16 @@
       type="image/*"
     />
     <title>V2EX 每日热门话题</title>
+    <script defer>
+      // Register service worker to control making site work offline
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("%PUBLIC_URL%/sw.js")
+          .then(function () {
+            console.log("Service Worker Registered");
+          });
+      }
+    </script>
     <link rel="manifest" href="%PUBLIC_URL%/manifest.webmanifest" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -30,13 +40,4 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
-
-  <script>
-    // Register service worker to control making site work offline
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("%PUBLIC_URL%/sw.js").then(function () {
-        console.log("Service Worker Registered");
-      });
-    }
-  </script>
 </html>
