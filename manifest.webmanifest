@@ -2,13 +2,13 @@
   "name": "V2EX Hots",
   "short_name": "VHots",
   "descriptions": "Way to Explore",
-  "start_url": "%PUBLIC_URL%/index.html",
+  "start_url": "/index.html",
   "background_color": "white",
   "display": "standalone",
   "theme_color": "white",
   "icons": [
     {
-      "src": "%PUBLIC_URL%/icon.jpg",
+      "src": "/icon.jpg",
       "type": "image/jpg",
       "sizes": "256x256",
       "purpose": "any maskable"
