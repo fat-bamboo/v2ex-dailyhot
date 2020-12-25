@@ -4,8 +4,7 @@
   "descriptions": "Way to Explore",
   "start_url": "/v2ex-daily-hot-topic-web/index.html",
   "background_color": "white",
-  "display": "standalone",
-  "theme_color": "white",
+  "display": "fullscreen",
   "icons": [
     {
       "src": "/v2ex-daily-hot-topic-web/icon.jpg",
