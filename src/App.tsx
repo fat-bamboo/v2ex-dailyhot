@@ -84,7 +84,7 @@ class App extends React.Component {
           <p>
             获取数据失败，
             <span className="error-text" onClick={this.refreshPage.bind(this)}>
-              刷新一下吧
+              尝试刷新一下吧
             </span>
           </p>
         )}
@@ -98,7 +98,10 @@ class App extends React.Component {
       dailyTopics: [],
       failedFetching: false,
     });
-    this.componentDidMount();
+
+    setTimeout(() => {
+      this.componentDidMount();
+    }, 2000);
   }
 }
 
