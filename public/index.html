@@ -10,7 +10,8 @@
       type="image/*"
     />
     <title>V2EX 每日热门话题</title>
-    <script defer>
+    <!-- NOTE: 去掉 PWA 相关配置 -->
+    <!-- <script defer>
       // Register service worker to control making site work offline
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker
@@ -19,8 +20,8 @@
             console.log("Service Worker Registered");
           });
       }
-    </script>
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.webmanifest" />
+    </script> -->
+    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.webmanifest" /> -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
