@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/v2ex-daily-hot-topic-web/static/css/main.ef6bb1ac.chunk.css",
-    "main.js": "/v2ex-daily-hot-topic-web/static/js/main.67361586.chunk.js",
-    "main.js.map": "/v2ex-daily-hot-topic-web/static/js/main.67361586.chunk.js.map",
+    "main.js": "/v2ex-daily-hot-topic-web/static/js/main.653a256d.chunk.js",
+    "main.js.map": "/v2ex-daily-hot-topic-web/static/js/main.653a256d.chunk.js.map",
     "runtime-main.js": "/v2ex-daily-hot-topic-web/static/js/runtime-main.37b86224.js",
     "runtime-main.js.map": "/v2ex-daily-hot-topic-web/static/js/runtime-main.37b86224.js.map",
     "static/js/2.cc12d952.chunk.js": "/v2ex-daily-hot-topic-web/static/js/2.cc12d952.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.37b86224.js",
     "static/js/2.cc12d952.chunk.js",
     "static/css/main.ef6bb1ac.chunk.css",
-    "static/js/main.67361586.chunk.js"
+    "static/js/main.653a256d.chunk.js"
   ]
 }
