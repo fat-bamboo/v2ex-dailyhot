@@ -8,6 +8,7 @@ import {
   SCRIPT_BEGIN_TIMESTAMP,
   DAY_MILLISECONDS_COUNT,
 } from "./consts";
+import AboutDialog from "./components/AboutDialog";
 
 type State = {
   isFetching: boolean;
@@ -68,7 +69,12 @@ class App extends React.Component {
   public render() {
     return (
       <div className="page-container">
-        <header className="header-text">V2EX 每日热门话题</header>
+        <header className="header-container">
+          <p className="header-text">V2EX 每日热门话题</p>
+          <span className="about-btn" onClick={this.showAboutDialog.bind(this)}>
+            About
+          </span>
+        </header>
         {/* 每日话题列表 */}
         {this.state.dailyTopics.map((d) => (
           <TopicListContainer
@@ -102,6 +108,11 @@ class App extends React.Component {
     setTimeout(() => {
       this.componentDidMount();
     }, 2000);
+  }
+
+  private showAboutDialog() {
+    const aboutDialog = new AboutDialog();
+    aboutDialog.show();
   }
 }
 

@@ -10,13 +10,24 @@
   padding-right: 10px;
 }
 
-.page-container > .header-text {
+.page-container > .header-container {
   width: 100%;
-  font-size: 26px;
-  line-height: 40px;
   padding-bottom: 15px;
   margin-bottom: 15px;
   border-bottom: 1px solid lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.page-container > .header-container > .header-text {
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.page-container > .header-container > .about-btn {
+  cursor: pointer;
 }
 
 .page-container .error-text {

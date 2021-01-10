@@ -1,0 +1,16 @@
+.about-dialog-container {
+  width: 300px;
+}
+
+.about-dialog-container > .header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.about-dialog-container .close-btn {
+  cursor: pointer;
+}
