@@ -2,11 +2,18 @@
 
 V2EX 热议话题榜，展示从 2020-12-18 日开始的 V2EX 热议话题榜单。
 
-有没有遇到过：
+## 主要意图
 
-- 每到 8:00，【热门】栏空空如也
-- 话题太多，我只想看前几个！
-- 想看看昨天热议的有哪些？
-- and so on
+- 让我至少可以看到昨天的热门主题；
+- Github 每天多“绿”一下；
 
-**[Shut up, show me the page](https://realleonardo.github.io/v2ex-daily-hot-topic-web/)**
+## 好处以及缺点
+
+- 不用再看到 8:00 后空空的热门栏 && 可以看到昨天以及之前的热门话题；
+- UI 风格更加简约以及突出重点（虽然只有一个标题~）；
+- 托管于 Github，所以存在国内网络访问慢甚至访问不了的问题。
+- 数据来源于官方 API，所以存在数据不“新”的问题；
+
+---
+
+### **[Shut up, show me the page!](https://realleonardo.github.io/v2ex-daily-hot-topic-web/)**
