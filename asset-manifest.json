@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/v2ex-daily-hot-topic-web/static/css/main.3601a058.chunk.css",
-    "main.js": "/v2ex-daily-hot-topic-web/static/js/main.744d8460.chunk.js",
-    "main.js.map": "/v2ex-daily-hot-topic-web/static/js/main.744d8460.chunk.js.map",
+    "main.css": "/v2ex-daily-hot-topic-web/static/css/main.1dd3e708.chunk.css",
+    "main.js": "/v2ex-daily-hot-topic-web/static/js/main.ab9c8a4e.chunk.js",
+    "main.js.map": "/v2ex-daily-hot-topic-web/static/js/main.ab9c8a4e.chunk.js.map",
     "runtime-main.js": "/v2ex-daily-hot-topic-web/static/js/runtime-main.37b86224.js",
     "runtime-main.js.map": "/v2ex-daily-hot-topic-web/static/js/runtime-main.37b86224.js.map",
     "static/js/2.9c79a4fe.chunk.js": "/v2ex-daily-hot-topic-web/static/js/2.9c79a4fe.chunk.js",
     "static/js/2.9c79a4fe.chunk.js.map": "/v2ex-daily-hot-topic-web/static/js/2.9c79a4fe.chunk.js.map",
     "index.html": "/v2ex-daily-hot-topic-web/index.html",
-    "static/css/main.3601a058.chunk.css.map": "/v2ex-daily-hot-topic-web/static/css/main.3601a058.chunk.css.map",
+    "static/css/main.1dd3e708.chunk.css.map": "/v2ex-daily-hot-topic-web/static/css/main.1dd3e708.chunk.css.map",
     "static/js/2.9c79a4fe.chunk.js.LICENSE.txt": "/v2ex-daily-hot-topic-web/static/js/2.9c79a4fe.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.37b86224.js",
     "static/js/2.9c79a4fe.chunk.js",
-    "static/css/main.3601a058.chunk.css",
-    "static/js/main.744d8460.chunk.js"
+    "static/css/main.1dd3e708.chunk.css",
+    "static/js/main.ab9c8a4e.chunk.js"
   ]
 }
