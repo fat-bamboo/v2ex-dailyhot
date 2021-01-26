@@ -1,5 +1,5 @@
 .about-dialog-container {
-  width: 300px;
+  width: 450px;
 }
 
 .about-dialog-container > .header-container {
@@ -8,6 +8,19 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
+.about-dialog-container > .header-container > .title-text {
+  font-weight: bold;
+}
+
+.about-dialog-container > .content-container {
+  height: 100px;
+}
+
+.about-dialog-container > .content-container > * {
   margin-bottom: 10px;
 }
 

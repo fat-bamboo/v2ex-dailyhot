@@ -34,6 +34,10 @@ export default class AboutDialog extends React.Component {
         </div>
         <div className="content-container">
           <p>V2EX 热议话题榜，展示从 2020-12-18 日开始的 V2EX 热议话题榜单。</p>
+          <p>
+            源码地址：
+            <a href="https://github.com/realLeonardo/v2ex-daily-hot-topic-web">GitHub</a>
+          </p>
         </div>
         <div className="footer-container">{/* TODO */}</div>
       </BaseDialog>
