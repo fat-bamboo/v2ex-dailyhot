@@ -15,10 +15,7 @@ export default class AboutDialog extends React.Component {
   public show() {
     // FIXME: 还没考虑如果存在多个 Dialog。
     document.body.classList.add("dialog-present-no-scroll");
-    ReactDOM.render(
-      this.render(),
-      document.body.appendChild(this.tempContainerEl)
-    );
+    ReactDOM.render(this.render(), document.body.appendChild(this.tempContainerEl));
   }
 
   public close() {

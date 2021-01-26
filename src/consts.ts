@@ -1,6 +1,5 @@
 /** 数据文件url前缀 */
-export const RAW_JSON_BASE_URL =
-  "https://realleonardo.github.io/v2ex-daily-hot-topic/raw/";
+export const RAW_JSON_BASE_URL = "https://realleonardo.github.io/v2ex-daily-hot-topic/raw/";
 
 /** 数据爬虫开始日期: "2020/12/18" */
 export const SCRIPT_BEGIN_TIMESTAMP: number = 1608220800000;

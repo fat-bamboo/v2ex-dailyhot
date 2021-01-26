@@ -3,11 +3,7 @@ import "./css/app.css";
 import TopicListContainer from "./components/TopicListContainer";
 import * as utils from "./utils";
 import { Topic } from "./types";
-import {
-  RAW_JSON_BASE_URL,
-  SCRIPT_BEGIN_TIMESTAMP,
-  DAY_MILLISECONDS_COUNT,
-} from "./consts";
+import { RAW_JSON_BASE_URL, SCRIPT_BEGIN_TIMESTAMP, DAY_MILLISECONDS_COUNT } from "./consts";
 import AboutDialog from "./components/AboutDialog";
 
 type State = {
@@ -77,11 +73,7 @@ class App extends React.Component {
         </header>
         {/* 每日话题列表 */}
         {this.state.dailyTopics.map((d) => (
-          <TopicListContainer
-            key={d.date}
-            topics={d.topics}
-            date={d.date}
-          ></TopicListContainer>
+          <TopicListContainer key={d.date} topics={d.topics} date={d.date}></TopicListContainer>
         ))}
         {/* fetching status text */}
         {this.state.isFetching && <p>获取数据中...</p>}

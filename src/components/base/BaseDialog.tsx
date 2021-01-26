@@ -19,9 +19,7 @@ export default class BaseDialog extends React.Component {
   public render() {
     return (
       <div className="dialog-main-wrapper">
-        <div className={"dialog-main-container " + this.props.class}>
-          {this.props.children}
-        </div>
+        <div className={"dialog-main-container " + this.props.class}>{this.props.children}</div>
       </div>
     );
   }
