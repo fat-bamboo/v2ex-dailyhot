@@ -1,5 +1,6 @@
 .about-dialog-container {
   width: 450px;
+  max-width: 80%;
 }
 
 .about-dialog-container > .header-container {
