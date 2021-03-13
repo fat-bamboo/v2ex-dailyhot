@@ -38,10 +38,16 @@ class App extends React.Component {
 
       try {
         const res = await fetch(rawDataFilePath);
-        const dailyTopics = {
+        let dailyTopics = {
           date: formatDateString,
-          topics: await res.json(),
+          topics: [],
         };
+
+        if (!res.ok && res.status === 404) {
+          // do nth
+        } else {
+          dailyTopics.topics = await res.json();
+        }
 
         this.setState({
           dailyTopics: this.state.dailyTopics.concat(dailyTopics),
@@ -50,7 +56,6 @@ class App extends React.Component {
         this.setState({
           failedFetching: true,
         });
-        console.error(error);
         break;
       }
 
