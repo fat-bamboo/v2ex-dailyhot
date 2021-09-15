@@ -1,10 +1,10 @@
 import React from "react";
-import "./css/app.css";
-import TopicListContainer from "./components/TopicListContainer";
 import * as utils from "./utils";
 import { Topic } from "./types";
 import { RAW_JSON_BASE_URL, SCRIPT_BEGIN_TIMESTAMP, DAY_MILLISECONDS_COUNT } from "./consts";
 import AboutDialog from "./components/AboutDialog";
+import TopicListContainer from "./components/TopicListContainer";
+import "./css/app.css";
 
 type State = {
   isFetching: boolean;
@@ -18,7 +18,7 @@ type State = {
 class App extends React.Component {
   public state: State;
 
-  constructor(props: any) {
+  constructor(props: {}) {
     super(props);
 
     this.state = {

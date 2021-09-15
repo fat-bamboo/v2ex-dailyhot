@@ -17,10 +17,6 @@
   font-weight: bold;
 }
 
-.about-dialog-container > .content-container {
-  height: 100px;
-}
-
 .about-dialog-container > .content-container > * {
   margin-bottom: 10px;
 }

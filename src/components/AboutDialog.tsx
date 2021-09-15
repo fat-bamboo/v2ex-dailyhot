@@ -13,7 +13,6 @@ export default class AboutDialog extends React.Component {
   }
 
   public show() {
-    // FIXME: 还没考虑如果存在多个 Dialog。
     document.body.classList.add("dialog-present-no-scroll");
     ReactDOM.render(this.render(), document.body.appendChild(this.tempContainerEl));
   }
@@ -39,7 +38,6 @@ export default class AboutDialog extends React.Component {
             <a href="https://github.com/boojack/v2ex-daily-hot-topic-web">GitHub</a>
           </p>
         </div>
-        <div className="footer-container">{/* TODO */}</div>
       </BaseDialog>
     );
   }
