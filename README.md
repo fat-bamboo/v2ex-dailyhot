@@ -16,4 +16,4 @@ V2EX 热议话题榜，展示从 2020-12-18 日开始的 V2EX 热议话题榜单
 
 ---
 
-### **[Shut up, show me the page!](https://boojack.github.io/v2ex-daily-hot-topic-web/)**
+### **[Shut up, show me the page!](https://fat-bamboo.github.io/v2ex-dailyhot/)**
