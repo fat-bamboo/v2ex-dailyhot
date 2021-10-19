@@ -4,7 +4,7 @@
   "descriptions": "Way to Explore",
   "background_color": "white",
   "display": "standalone",
-  "start_url": "/v2ex-daily-hot-topic-web/",
+  "start_url": "/v2ex-dailyhot/",
   "icons": [
     {
       "src": "fox-icon.png",
